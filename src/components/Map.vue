@@ -1,52 +1,64 @@
 <template>
-  <div id="app">
-    <div class="content">
-      <world-map
-        :items="items"
-        :gradient="gradient"
-        :width="width"
-        :height="height"
-      />
-    </div>
-  </div>
+<div id="map-with-bullets"></div>
 </template>
 
 <script>
-const LOCATIONS = [
-  [0, 0],
-  [57.73283538388789, -4.241936641313221],
-  [51.485905768057684, -0.14113400412646243],
-  [37.32475021003936, -122.01721335742904],
-  [-54.62752473177673, -67.65375534812648],
-  [-24.95315154448069, 45.115388878969846],
-  [31.93205160405814, 130.96855844480496],
-  [39.85273248216445, -74.43660081415356],
-  [-34.458802502666884, 19.732674269808914],
-  [-46.095954579349495, 168.56824018104518],
-];
 
-export default {
-  name: "App",
-  data: () => ({
-    width: 1600,
-    height: 900,
-    gradient: [
-      "#DFEBFF",
-      "#307CFF",
-      "#4B4EEF",
-      "#33307A",
-      "#242748",
-      "#962E5B",
-      "#943157",
-      "#FDE28B",
-    ],
-    items: LOCATIONS.map((location) => ({
-      name: `location-${Math.random()}`,
-      location,
-      value: Math.random() * 100,
-    })),
-  }),
-};
+const map = document.getElementById('map-with-bullets');
+
+const mapInstance = new VectorMap(map, {
+  readonly: true,
+  tooltips: false,
+  hover: false,
+  fill: '#E0E0E0',
+  stroke: '#fff',
+  btnClass: 'btn-secondary',
+  markers: [
+    {
+      x: 533,
+      y: 290,
+      label: 'Warsaw',
+      type: 'bullet',
+      fill: '#B23CFD',
+    },
+    {
+      x: 267,
+      y: 337,
+      label: 'New York',
+      type: 'bullet',
+      fill: '#FFA900',
+    },
+    {
+      x: 474,
+      y: 294,
+      label: 'London',
+      type: 'bullet',
+      fill: '#F93154',
+    },
+    {
+      x: 505,
+      y: 252,
+      label: 'Oslo',
+      type: 'bullet',
+      fill: '#39C0ED',
+    },
+    {
+      x: 481,
+      y: 308,
+      label: 'Paris',
+      type: 'bullet',
+      fill: '#00B74A',
+    },
+    {
+      x: 800,
+      y: 338,
+      label: 'Beijing',
+      type: 'bullet',
+      fill: '#1266F1',
+    },
+  ],
+});
+
 </script>
 
 <style>
