@@ -1,4 +1,4 @@
-# Web App for [Disc4All landing platform](disc4all.eu)  framework
+# Web App for [Disc4All landing platform](http://www.disc4all.eu)  framework
 
 ## Project setup 🆙
  
