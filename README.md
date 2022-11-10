@@ -1,7 +1,7 @@
-# ![DISC](https://disc4all.swiss-meeting.org/wp-content/uploads/2018/12/Disc4all-white_shadow_alpha.png) Web App for [Disc4All landing platform](http://www.disc4all.eu)  framework
+#  Web App for [Disc4All landing platform](http://www.disc4all.eu)  framework
 
 
-
+![DISC](https://disc4all.swiss-meeting.org/wp-content/uploads/2018/12/Disc4all-white_shadow_alpha.png)
 
 
 ## Project setup 🆙
@@ -26,3 +26,7 @@ npm run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+<p align="center">
+  <img src="https://disc4all.swiss-meeting.org/wp-content/uploads/2018/12/Disc4all-white_shadow_alpha.png" />
+</p>
