@@ -1,9 +1,10 @@
 #  Web App for [Disc4All landing platform](http://www.disc4all.eu)  framework
 
-
-![DISC](https://disc4all.swiss-meeting.org/wp-content/uploads/2018/12/Disc4all-white_shadow_alpha.png)
-
-
+<p align="center">
+  <img https://d3r49iyjzglexf.cloudfront.net/blog/meta/circleci-logo-stacked-fb-657e221fda1646a7e652c09c9fbfb2b0feb5d710089bb4d8e8c759d37a832694.png />
+ </p>
+ 
+ 
 ## Project setup 🆙
  
 
