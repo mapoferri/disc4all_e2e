@@ -1,7 +1,7 @@
-# Web App for [Disc4All landing platform](http://www.disc4all.eu)  framework
+# ![DISC](https://disc4all.swiss-meeting.org/wp-content/uploads/2018/12/Disc4all-white_shadow_alpha.png) Web App for [Disc4All landing platform](http://www.disc4all.eu)  framework
 
 
-![DISC](https://disc4all.swiss-meeting.org/wp-content/uploads/2018/12/Disc4all-white_shadow_alpha.png)
+
 
 
 ## Project setup 🆙
