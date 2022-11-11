@@ -1,76 +1,92 @@
 <template>
-<div id="map-with-bullets"></div>
+  <DxVectorMap
+    id="vector-map"
+    :bounds="bounds"
+  >
+    <DxLayer
+      :data-source="mapsWorld"
+      :hover-enabled="false"
+      name="areas"
+      color-grouping-field="population"
+    />
+    <DxLayer
+      :data-source="markers"
+      :size-groups="sizeGroups"
+      :min-size="20"
+      :max-size="40"
+      :opacity="0.8"
+      name="bubbles"
+      element-type="bubble"
+      data-field="value"
+    />
+    <DxLegend
+      :customize-items="customizeItems"
+      :customize-text="customizeText"
+      marker-shape="circle"
+    >
+      <DxSource
+        layer="bubbles"
+        grouping="size"
+      />
+    </DxLegend>
+    <DxTooltip
+      :enabled="true"
+      :customize-tooltip="customizeTooltip"
+    />
+  </DxVectorMap>
 </template>
-
 <script>
 
-const map = document.getElementById('map-with-bullets');
+import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
 
-const mapInstance = new VectorMap(map, {
-  readonly: true,
-  tooltips: false,
-  hover: false,
-  fill: '#E0E0E0',
-  stroke: '#fff',
-  btnClass: 'btn-secondary',
-  markers: [
-    {
-      x: 533,
-      y: 290,
-      label: 'Warsaw',
-      type: 'bullet',
-      fill: '#B23CFD',
-    },
-    {
-      x: 267,
-      y: 337,
-      label: 'New York',
-      type: 'bullet',
-      fill: '#FFA900',
-    },
-    {
-      x: 474,
-      y: 294,
-      label: 'London',
-      type: 'bullet',
-      fill: '#F93154',
-    },
-    {
-      x: 505,
-      y: 252,
-      label: 'Oslo',
-      type: 'bullet',
-      fill: '#39C0ED',
-    },
-    {
-      x: 481,
-      y: 308,
-      label: 'Paris',
-      type: 'bullet',
-      fill: '#00B74A',
-    },
-    {
-      x: 800,
-      y: 338,
-      label: 'Beijing',
-      type: 'bullet',
-      fill: '#1266F1',
-    },
-  ],
-});
+import {
+  DxVectorMap,
+  DxLabel,
+  DxLayer,
+  DxLegend,
+  DxSource,
+  DxTooltip,
+} from 'devextreme-vue/vector-map';
 
+import { markers } from './assets/data.js';
+
+export default {
+  components: {
+    DxVectorMap,
+    DxLabel,
+    DxLayer,
+    DxLegend,
+    DxSource,
+    DxTooltip,
+  },
+  data() {
+    return {
+      markers,
+      mapsWorld: mapsData.world,
+      bounds: [-180, 85, 180, -60],
+      sizeGroups: [0, 8000, 10000, 50000],
+    };
+  },
+  methods: {
+    customizeTooltip(info) {
+      if (info.layer.type === 'marker') {
+        return { text: info.attribute('tooltip') };
+      }
+      return null;
+    },
+
+    customizeText({ index }) {
+      return ['< 8000K', '8000K to 10000K', '> 10000K'][index];
+    },
+
+    customizeItems(items) {
+      return items.reverse();
+    },
+  },
+};
 </script>
-
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: white;
-  background: #1d2b41;
-  margin: 0;
-  padding: 0;
+#vector-map {
+  height: 440px;
 }
 </style>
-

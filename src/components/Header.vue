@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
 <MDBNavbar class="navbar navbar-expand-lg gradient-custom" />
 <MDBNavbar expand="lg" container>

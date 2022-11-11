@@ -1,4 +1,17 @@
+/* eslint-disable */
 <template>
+<MDBRow style="background-color: #000221">
+<MDBCol>
+
+  <MDBRow class="align-items-center ps-5 mx-5 mb-3" style="height: 100px; background-color: #000221">
+      <MDBCol class="col-example stats align-items-center">  <MDBBtn outline="light" rounded style="font-weight:bold; ">15</MDBBtn>&nbsp;  Researchers  &nbsp;<i class="far fa-user-circle"></i></MDBCol>
+      <MDBCol class="col-example stats align-items-center"><MDBBtn outline="light" rounded style="font-weight:bold; ">11</MDBBtn>&nbsp; Partners  &nbsp;<i class="far fa-building"></i> </MDBCol>
+      <MDBCol class="col-example stats align-items-center"><MDBBtn outline="light" rounded style="font-weight:bold; ">25</MDBBtn>&nbsp;  Studies  &nbsp;<i class="far fa-newspaper"></i> </MDBCol>
+      <MDBCol class="col-example stats align-items-center"><MDBBtn outline="light" rounded style="font-weight:bold; ">1</MDBBtn>&nbsp; Consortium  &nbsp;<i class="far fa-compass" size="lg"></i> </MDBCol>
+    </MDBRow>
+
+</MDBCol>
+</MDBRow>
 <MDBRow>
 <MDBCol>
 <MDBFooter class="footer" :text="['center', 'white']">
@@ -130,6 +143,18 @@
  color: rgba(0, 2, 33, 0.85)
 }
 
+
+.stats {
+
+background-color: #000221;
+color: white;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+text-transform: uppercase;
+font-size: 20px
+
+
+}
 
 .submit {
 background-color:  rgba(0, 2, 33, 0.85);
