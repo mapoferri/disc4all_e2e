@@ -2,120 +2,80 @@
 
 
 <template>
-<MDBRow>
-    <MDBCol lg="12" class="slide"><MDBCarousel
-    v-model="carousel1"
-    :items="items1"
-    fade
-    :controls="false"
-    innerClass="shadow-4-strong"
-  />
-</MDBCol>
-<MDBCol lg="12">
-<MDBRow>
-    <MDBCol sm="6 gx-0">
-      <MDBCard text="center" class="boxes">
-        <MDBCardBody>
-          <MDBCardTitle>Data Sharing <MDBIcon icon="database" /> </MDBCardTitle>
-          <MDBCardText>
-            Click here to access the Data Catalogue and Data Frameworks available for your data
-          </MDBCardText>
-          <MDBBtn tag="a" href="#!" class="button">Disc4All Data</MDBBtn>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol sm="6 gx-0">
-      <MDBCard text="center" class="boxes">
-        <MDBCardBody>
-          <MDBCardTitle>Tools Investigation <MDBIcon icon="cubes" /></MDBCardTitle>
-          <MDBCardText>
-          Click here to access the Tools and Workflow platform for diagnosis investigation
-	  </MDBCardText>
-          <MDBBtn tag="a" href="#!" class="button">Disc4All tools</MDBBtn>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-  </MDBRow>
-</MDBCol>
-<MDBCol sm="12">
-  <MDBRow class="g-3 mx-2 my-1" :cols="['1', 'md-5']">
-    <MDBCol>
-      <MDBCard shadow="2" bg="white" class="cartas h-100" >
-        <MDBCardImg src="https://www.showsbee.com/newmaker/www/u/2022/20229/cfr_img/ORS-PSRS.png" top alt="tst"/>
-        <MDBCardBody>  <MDBBadge class="button position-relative top-0 start-0">Latest</MDBBadge>
-          <MDBCardTitle>ORS PSRS 6th International Spine Research Symposium </MDBCardTitle>
-          <MDBCardText class="testo">
-      	  The meeting will be held at Skytop Lodge located in picturesque Pocono Mountains, Pennsylvania, a short drive from Philadelphia from November 6-10, 2022. 
-	  </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol>
-     <MDBCard shadow="2" bg="white" class="cartas h-100" >
-        <MDBCardImg src="https://i0.wp.com/orthocg.com/wp-content/uploads/2022/04/SpineWeek-2023.png?fit=2312%2C1540&ssl=1" top alt="tst"/>
-        <MDBCardBody>  <MDBBadge class="button position-relative top-0 start-0">Latest</MDBBadge>
-          <MDBCardTitle>Spineweek 2023 </MDBCardTitle>
-          <MDBCardText class="testo">
-	15 November 2022:Deadline Call for Abstracts.
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol>
-	 <MDBCard shadow="2" bg="white" class="cartas h-100" >
-        <MDBCardImg src="https://marie-sklodowska-curie-actions.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-08/640x360_Night_English-wt.jpg?h=ae1281eb&itok=mv1mYXDU" top alt="tst"/>
-        <MDBCardBody>  <MDBBadge class="button position-relative top-0 start-0">Latest</MDBBadge>
-          <MDBCardTitle>European Researchers' Night </MDBCardTitle>
-          <MDBCardText class="testo">
-        	This year, the event will take place in 26 countries on Friday 30 September 2022.
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol>
-	 <MDBCard shadow="2" bg="white" class="cartas h-100" >
-        <MDBCardImg src="https://pbs.twimg.com/ext_tw_video_thumb/1582289669710139394/pu/img/UDptnNvByKLKkkKN.jpg" top alt="tst"/>
-        <MDBCardBody>  <MDBBadge class="button position-relative top-0 start-0">Latest</MDBBadge>
-          <MDBCardTitle>VPH 2022 CONFERENCE VIRTUAL PHYSIOLOGICAL HUMAN </MDBCardTitle>
-          <MDBCardText class="testo">
-	  Digital twins for personalized treatment development and clinical trials, 6 - 9 September 2022in Porto, Portugal.
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol>
-      <MDBCard shadow="2" bg="white" class="cartas h-100" >
-        <MDBCardImg src="https://eventum.upf.edu/_files/_event/_78383/_header_img/_107971.png" top alt="tst"/>
-        <MDBCardBody>  <MDBBadge class="button position-relative top-0 start-0">Latest</MDBBadge>
-          <MDBCardTitle> 6th Barcelona VPH SUMMER SCHOOL  </MDBCardTitle>
-          <MDBCardText class="testo">
-		The 6th VPH Summer School will be held on May 23-27, 2022, and will focus on Highly Multifactorial Disorders. 
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
+<MDBCol class="slide">
+<MDBRow class="mx-5 my-0 py-0 slide">
+  <div
+      class="p-0 text-center bg-image rounded-9"
+      style="
+        background-image: url('');
+        height: 300px;
+        background-size: cover;
+	background-color: #000221
+      "
+    >
+        <div class="mask" style="background-color: rgba(0, 2, 33, 0.65);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+	    <h2> Central platform for Data Access and Tools Management</h2>
+        <h3 style="font-variant: small-caps ;text-transform:lowercase; font-size: 18px"> Disc4All project</h3>
+	<h5 class="text-center" style="font-variant: small-caps; text-transform:lowercase;  color: rgba(255, 239, 61, 0.60)">LBP is the largest cause of morbidity worldwide, yet there remains controversy as to the specific cause leading to poor treatment options and prognosis. LDD is reported to account for 50% of LBP in young adults, but the interplay of factors from genetics, environmental, cellular responses and social and psychological factors is poorly understood. Unfortunately, the integration of such data into a holistic and rational map of degenerative processes and risk factors has not been achieved, requiring creation of professional crosscompetencies, which current training programmes fail to address.</h5> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+
 </MDBRow>
 </MDBCol>
 
+<MDBCol sm="12">
+	<MDBRow class="px-0 mx-0 my-0 slide">
+		<MDBCardGroup>
+			<MDBCard text="left" class="boxes">
+				<MDBCardBody>
+				<MDBCardText>
 
-<MDBRow>
-<MDBCol xl="12 my-0">
+				<h6> From this page you can access the openVRE as the workspace of the project, where you can upload, analyse and visualize your data and results for Simulations and Models in the diagnosis for Intervertebral Disc Degeneration. You can also find direct access to the Data platform and catalog, for uploading and storing your data. 
+				</h6>
+				</MDBCardText>
+				</MDBCardBody>
+      			</MDBCard>
 
-  <header fluid>
+      			<MDBCard text="center" class="boxes">
+        			<MDBCardBody>
+          			<MDBCardText>
+            			Click here to access the Data Catalogue and Data Frameworks available for your data
+          			</MDBCardText>
+          				<MDBBtn tag="a" href="#!" class="button">Disc4All Data  <MDBIcon icon="database" /> </MDBBtn>
+        			</MDBCardBody>
+      			</MDBCard>
+     			<MDBCard text="center" class="boxes">
+        			<MDBCardBody>
+         	 		<MDBCardText>
+          			Click here to access the Tools and Workflow platform for diagnosis investigation
+          			</MDBCardText>
+          			<RouterLink to="/prova"><MDBBtn tag="a" class="button">Launch openVRE <MDBIcon icon="cubes" /></MDBBtn></RouterLink>
+        			</MDBCardBody>
+      			</MDBCard>
+		</MDBCardGroup>
+  	</MDBRow>
+</MDBCol>
+
+
+<MDBRow class="mx-0 my-0 py-0">
   <div
       class="p-3 text-center bg-image"
       style="
-        background-image: url('https://cdn.freebiesupply.com/logos/thumbs/2x/eu-logo.png');
-        height: 400px;
-        margin-top: 58px;
+        background-image: url('https://i.postimg.cc/wBZmG6fb/eudesign.png');
+        height: 300px;
 	background-size: cover;
       "
     >
-	<div class="mask" style="background-color: rgba(0, 0, 61, 0.85);">
+	<div class="mask" style="background-color: rgba(0, 2, 33, 0.55);">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-white">
             <h1 class="mb-3 itn">Marie Sklodowska Curie actions</h1>
-            <h4 class="mb-3 itn2">The European innovative training networks (ITN) aim to train a new generation of researchers in their early stages who are creative, enterprising and innovative, capable of dealing with the challenges of the future and turn knowledge and ideas into products and services with an economic and a social benefit. ITN programmes within the framework of the European Commission’s Marie Sklodowska-Curie Actions support joint competitive programmes for training in research or joint doctorates. These programmes will be implemented by partnerships of universities, research centres, businesses, SMEs and other stakeholders in Europe and the rest of the world.</h4>
+            <h4 class="mb-3 itn2"> This is an ITN programmes within the framework of the European Commission’s Marie Sklodowska-Curie Actions support joint competitive programmes for training in research or joint doctorates.</h4>
             <MDBBtn tag="a" size="lg" lg  class="button" href="https://disc4all.upf.edu/" role="button"
               >Official Disc4All ITN</MDBBtn>
           </div>
@@ -123,18 +83,15 @@
       </div>
     </div>
     <!-- Background image -->
-  </header>
-
-
-</MDBCol>
-</MDBRow>
 
 </MDBRow>
-
+<RouterView />
 </template>
+
 <script>
 import { ref } from "vue";
   import { MDBFooter, MDBListGroup, MDBListGroupItem, MDBBadge, MDBCardFooter, MDBIcon, MDBCol, MDBRow, MDBCarousel, MDBBtn, MDBCard, MDBCardBody, MDBCardImg, MDBContainer,  MDBCardTitle, MDBCardText, MDBCardHeader } from "mdb-vue-ui-kit";
+  import { RouterLink, RouterView } from "vue-router";
   export default {
     components: {
       MDBListGroup,
@@ -188,6 +145,7 @@ import { ref } from "vue";
 
 </script>
 
+
 <style>
 
 .gradient-custom {
@@ -214,19 +172,18 @@ import { ref } from "vue";
 
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   color: rgba(255, 239, 61, 0.45)
 
 }
 
 .slide {
-  background: rgba(255, 239, 61, 0.35);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   font-weight: 400;
-  text-transform: uppercase;
+  font-variant: small-caps;
   font-size: 17px;
   color: rgba(255, 239, 61)  !important;
-  background-color: rgba(255, 239, 61, 0.75);
+  background-color:  #000221;
 }
 
 
@@ -236,16 +193,19 @@ import { ref } from "vue";
 
 
 .boxes {
-  color: #000221;
-  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-family: 'Albert Sans', sans-serif;
   font-size: 12px;
   text-transform: uppercase;
+  background-color: #000221;
 
 }
 
 .button {
   background-color: rgba(255, 239, 61, 0.45);
-  color: #000221
+  color: #000221;
+ font-family: 'ALbert Sans', sans-serif;
+  font-weight: 400;
 
 }
 
@@ -256,7 +216,7 @@ import { ref } from "vue";
 
 .cartas {
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 12px;
@@ -266,7 +226,7 @@ import { ref } from "vue";
 
 .testo {
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   font-weight: 400;
   font-size: 10px;
   color: #000221;

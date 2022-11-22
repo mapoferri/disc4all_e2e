@@ -132,7 +132,7 @@
 
 <style>
 .footer {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   background: linear-gradient(to right, rgba(0, 2, 33, 0.85), rgba(255, 239, 61, 0.75));
@@ -148,7 +148,7 @@
 
 background-color: #000221;
 color: white;
-font-family: 'Roboto', sans-serif;
+font-family: 'Albert Sans', sans-serif;
 font-weight: bold;
 text-transform: uppercase;
 font-size: 20px
